@@ -32,6 +32,11 @@ if __name__ == "__main__":
     print("\n\n##########| QIS Scanner started |##########")
     print("Press Ctrl+C to exit the programm\n")
 
+    
+    if not os.path.exists("./logs"):
+        os.mkdir("./logs")
+        print("Creating logs folder...")
+
     #logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG, filename='main.log')
     logging.basicConfig(level=logging.INFO,format=settingsHandler.loggingFormat,datefmt='%Y-%m-%d %H:%M:%S',)
     logging.getLogger("requests.packages.urllib3.connectionpool").setLevel(logging.WARNING) # removes the: requests.packages.urllib3.connectionpool INFO     Resetting dropped connection: qis.hs-albsig.de
