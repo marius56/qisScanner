@@ -14,9 +14,9 @@ You need to install the following modules to make the programm work
 
 ## Setup
 1. Insert your Telegram chat ID into the *chatIDs.cfg* file
-2. Insert your Telegram bot token into the *settings.cfg* file
-3. Execute: 
+2. Execute: 
     >python3 main.py
+3. Enter your username, password and bot token.
 
 
 ---

@@ -82,7 +82,7 @@ if __name__ == "__main__":
         f = Fernet(settings.key)
 
         while True:
-            settings.username = input("Name: ")
+            settings.username = input("Username: ")
             settings.password = f.encrypt(getpass.getpass(prompt='Password:', stream=None).encode()) # to not store password in clear text
             login()
             
